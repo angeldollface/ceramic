@@ -6,7 +6,7 @@
 
 ## ABOUT :books:
 
-Since I was trying to figure out the algorithm for validating Luhn numbers for a uni course, I thought I'd write a small app that caters to all the just-mentioned. This little app checks wether the IMEI number of any one of your devices is valid or not by checking the "check digit" using the Luhn algorithm.
+Since I was trying to figure out the algorithm for validating Luhn numbers for a uni course, I thought I'd write a small app that solves this interesting problem. This little app checks whether the IMEI number of any one of your devices is valid or not by checking the "check digit" using the Luhn algorithm.
 
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
