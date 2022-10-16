@@ -1,0 +1,96 @@
+/*
+CERAMIC by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+/*This file styles the desktop view of Ceramic.*/
+
+html, body {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: $mainColor;
+}
+
+h1 {
+    padding-top: $stdPadding;
+    padding-bottom: $stdPadding;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: $headingFont;
+    font-size: 50px;
+    text-align: center;
+    color: $accentColor;
+}
+
+div.content {
+    margin: 0 auto;
+    display: block;
+    width: 70vw;
+    padding: $stdPadding;
+    margin-top: 0px !important;
+    margin-bottom: $stdPadding !important;
+    background-color: $mainColor;
+    border-radius: $stdPadding;
+    box-shadow: 1px 2px 15px $accentColor;
+}
+
+input[type=text] {
+    overflow-x: scroll;
+    padding: $stdPadding;
+    font-family: $contentFont;
+    font-size: 30px;
+    color: $mainColor;
+    background-color: $accentColor;
+    border-radius: $stdPadding;
+    border: 3px solid $accentColor;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px !important;
+    margin-bottom: $stdPadding !important;
+    text-align: left;
+}
+
+input[type=text]:focus {
+    outline:none;
+}
+
+button {
+    padding: $stdPadding;
+    font-family: $contentFont;
+    font-size: 30px;
+    color: $accentColor;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: transparent;
+    border-radius: $stdPadding;
+    border: 3px solid $accentColor;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+
+button:hover {
+    padding: 25px;
+}
+
+p.result {
+    padding-top: $stdPadding;
+    padding-bottom: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: $contentFont;
+    font-size: 30px;
+    text-align: center;
+    color: $accentColor;
+}
