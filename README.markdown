@@ -14,7 +14,7 @@ I've tested this using the IMEI number of my iPhone and some IMEIs I found onlin
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
-To view a live deployed version of this project, click here: [VIEW](https://angeldollface.art/cermaic)
+To view a live deployed version of this project, click here: [VIEW](https://angeldollface.art/ceramic)
 
 ## TRY IT FOR YOURSELF! :inbox_tray:
 
