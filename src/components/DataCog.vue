@@ -52,7 +52,7 @@ export default defineComponent(
     data (){
         return {
             inputData: 'Type something!',
-            isValid: false.toString()
+            isValid: 'No input yet!'
         }
     },
 
