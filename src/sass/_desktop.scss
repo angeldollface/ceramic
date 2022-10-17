@@ -124,8 +124,11 @@ p.info {
     color: $accentColor;
 }
 p.footer {
-    padding: 20px;
-    margin: 0px;
+    padding: $stdPadding;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: $stdPadding/2;
+    margin-right: $stdPadding/2;
     font-family: $contentFont;
     font-size: 30px;
     text-align: center;

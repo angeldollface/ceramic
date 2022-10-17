@@ -58,8 +58,8 @@ $headingFont: 'Vogue';
 $contentFont: 'PSB';
 $mainColor: #000;
 $stdPadding: 20px;
-$accentColor: #FF7BAC;
-$hoverColor: #EA1573;
+$accentColor: #EA1573;
+$hoverColor: #FF7BAC;
 
 // Importing our stylesheets.
 @import './sass/desktop';

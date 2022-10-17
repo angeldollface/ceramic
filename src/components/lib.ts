@@ -130,7 +130,6 @@ export function getLastItem(arr: Array<string>): string {
 // and returns true or false depending on whether they are equal or not.
 export function validateIMEI(imei: string): boolean {
     let imeiChars: Array<string> = imei.split('');
-    console.log(isNumberSequence(imei));
     let checkDigit: string = getLastItem(imeiChars);
     let result: boolean = false;
     let sum: number = addImportantDoubleDigits(imei) + addTrashNumbers(imei);

@@ -9,19 +9,28 @@
 Since I was trying to figure out the algorithm for validating IMEI numbers for a uni course, I thought I'd write a small app that solves this interesting problem. This little app checks whether the IMEI number of any one of your devices is valid or not by computing the check digit and comparing this to the actual check digit. The "Luhn Algorithm" is used to
 do this.
 
-## LUHN ALGORITHM IMPLEMENTATION :gear:
+## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
-The implementation of the *Luhn Algorithm*, the algorithm that actually validates IMEI numbers against their check digit, can be found in the file `src/components/lib.ts`.
+To view a live deployed version of this project, click here: [VIEW](https://angeldollface.art/ceramic)
+
+## USAGE :hammer:
+
+- 1.) Visit [this link](https://angeldollface.art/ceramic).
+- 2.) Get the IMEI for your device from the instructions for your platform. (You might have to scroll a bit.)
+- 3.) Copy this IMEI number or write it down.
+- 4.) Put the number into the input field.
+- 5.) Click "VALIDATE"!
+- 6.) Receive the status of your IMEI number from the text below the "VALIDATE" button that says `IMEI valid: Type something!`.
 
 ## QUALITY ASSURANCE :white_check_mark:
 
 I've tested this using the IMEI number of my iPhone and some IMEIs I found online.
 
-## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
+## LUHN ALGORITHM IMPLEMENTATION :gear:
 
-To view a live deployed version of this project, click here: [VIEW](https://angeldollface.art/ceramic)
+The implementation of the *Luhn Algorithm*, the algorithm that actually validates IMEI numbers against their check digit, can be found in the file `src/components/lib.ts`.
 
-## TRY IT FOR YOURSELF! :inbox_tray:
+## TRY THE CODE FOR YOURSELF! :inbox_tray:
 
 Make sure you have the following tools installed and available from the command line:
 
@@ -69,11 +78,13 @@ $ npm run build
 - Upload to GitHub.
 - Deployment on GitHub Pages.
 
-### Version 1.2.0
+### Version 1.1.0
 
-- Added input validation.
-- Added an info section on IMEIs.
 - Added a footer.
+- Updated documentation.
+- Added input validation.
+- Added usage instructions.
+- Added an info section on IMEIs.
 
 ## NOTE :scroll:
 
