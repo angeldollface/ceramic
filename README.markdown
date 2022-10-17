@@ -6,11 +6,13 @@
 
 ## ABOUT :books:
 
-Since I was trying to figure out the algorithm for validating Luhn numbers for a uni course, I thought I'd write a small app that solves this interesting problem. This little app checks whether the IMEI number of any one of your devices is valid or not by checking the "check digit" using the Luhn algorithm.
+Since I was trying to figure out the algorithm for validating IMEI numbers for a uni course, I thought I'd write a small app that solves this interesting problem. This little app checks whether the IMEI number of any one of your devices is valid or not by computing the check digit and comparing this to the actual check digit. The "Luhn Algorithm" is used to
+do this.
 
 ## LUHN ALGORITHM IMPLEMENTATION :gear:
 
 The implementation of the *Luhn Algorithm*, the algorithm that actually validates IMEI numbers against their check digit, can be found in the file `src/components/lib.ts`.
+
 ## QUALITY ASSURANCE :white_check_mark:
 
 I've tested this using the IMEI number of my iPhone and some IMEIs I found online.
@@ -66,6 +68,12 @@ $ npm run build
 - Initial release.
 - Upload to GitHub.
 - Deployment on GitHub Pages.
+
+### Version 1.2.0
+
+- Added input validation.
+- Added an info section on IMEIs.
+- Added a footer.
 
 ## NOTE :scroll:
 

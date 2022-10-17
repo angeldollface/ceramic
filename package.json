@@ -1,6 +1,6 @@
 {
   "name": "ceramic",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "private": false,
   "description": "A small Vue.js 3 app to validate IMEI numbers.",
   "scripts": {

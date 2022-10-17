@@ -3,8 +3,39 @@ CERAMIC by Alexander Abraham, a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
 
-// Gets every second number except for the check digit - the last
-// character.
+// Checks whether the supplied character is
+// an integer. Returns a boolean depending on this. 
+export function isInt(subject: string): boolean {
+    let result: boolean = false;
+    if (
+        isNaN(parseInt(subject))
+    ){
+        // Do nothing.
+    }
+    else {
+       result = true;
+    }
+    return result;
+}
+
+// Checks whether the supplied IMEI string
+// only contains integers.
+// Returns a boolean depending on this. 
+export function isNumberSequence(imei: string): boolean {
+    let result: boolean = true;
+    let charList: Array<string> = imei.split('');
+    for (let i = 0; i < charList.length; i++){
+        if (isInt(charList[i]) === false){
+            result = false;
+        }
+        else {
+            // Do nothing.
+        }
+    }
+    return result;
+}
+
+// Gets every second number starting from the left.
 export function getImportantNumbers(number: String): Array<string>{
     let result = Array<string>();
     let charList: Array<string> = number.split('');
@@ -39,7 +70,8 @@ export function getTrashNumbers(number: String): Array<string>{
     return result;
 }
 
-// Converts all the "important" numbers and doubles them.
+// Converts all the "important" numbers, doubles them, and returns them
+// in an array.
 export function doubleImportantNumbers(imei: string): Array<number>{
     let impNums: Array<string> = getImportantNumbers(imei);
     let result = Array<number>();
@@ -59,8 +91,8 @@ export function addTrashNumbers(imei: string): number{
     return result;
 }
 
-// Because this is Typescript and we can't play fast and loose with types, we need
-// to convert between the arrays' types. 
+// Because this is Typescript and we can't play fast and loose with types
+// we need to convert between the arrays' types. 
 export function convertNumberArrayToStringArray(arr: Array<number>): Array<string> {
     let result = Array<string>();
     for (let i = 0; i < arr.length; i++){
@@ -92,19 +124,19 @@ export function getLastItem(arr: Array<string>): string {
     return arr[lastItemIndex];
 }
 
-// Gets the check digit of your IMEI, adds the "important" and the other
+// Gets the check digit of your IMEI, adds the "important" and the
 // "other" numbers together, subtracts the "mod 10" from 10 of that sum, makes
 // a type conversion, compares the check digit and the calculated check digit,
 // and returns true or false depending on whether they are equal or not.
 export function validateIMEI(imei: string): boolean {
     let imeiChars: Array<string> = imei.split('');
+    console.log(isNumberSequence(imei));
     let checkDigit: string = getLastItem(imeiChars);
-    console.log(checkDigit);
     let result: boolean = false;
     let sum: number = addImportantDoubleDigits(imei) + addTrashNumbers(imei);
     let computedCheckDigit: number = (10 - (sum%10));
     let computedConvertedCD: string = computedCheckDigit.toString();
-    if (checkDigit === computedConvertedCD){
+    if (checkDigit === computedConvertedCD && imeiChars.length === 15){
         result = true;
     }
     else {
@@ -116,10 +148,12 @@ export function validateIMEI(imei: string): boolean {
 // Exports everything so
 // that we can use it.
 export default {
+    isInt,
     getLastItem,
     validateIMEI,
     getTrashNumbers,
     addTrashNumbers,
+    isNumberSequence,
     getImportantNumbers,
     doubleImportantNumbers,
     addImportantDoubleDigits,

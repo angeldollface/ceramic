@@ -7,6 +7,11 @@ Licensed under the MIT license.
 <template>
  <HeadingCog/>
  <DataCog/>
+ <br/>
+ <InfoCog/>
+ <br/>
+ <FooterCog/>
+ <br/>
 </template>
 
 <!--
@@ -16,6 +21,8 @@ and register those with the "App".
 <script lang="ts">
 import { defineComponent } from 'vue';
 import DataCog from './components/DataCog.vue';
+import InfoCog from './components/InfoCog.vue';
+import FooterCog from './components/FooterCog.vue';
 import HeadingCog from './components/HeadingCog.vue';
 
 export default defineComponent(
@@ -23,6 +30,8 @@ export default defineComponent(
     name: 'App',
     components: {
       DataCog,
+      InfoCog,
+      FooterCog,
       HeadingCog
     }
   }
@@ -50,6 +59,7 @@ $contentFont: 'PSB';
 $mainColor: #000;
 $stdPadding: 20px;
 $accentColor: #FF7BAC;
+$hoverColor: #EA1573;
 
 // Importing our stylesheets.
 @import './sass/desktop';

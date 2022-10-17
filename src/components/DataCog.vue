@@ -36,6 +36,7 @@ lifting of our app.
 
 // We import the library I wrote earlier.
 import { validateIMEI } from './lib';
+import { isNumberSequence } from './lib';
 
 // We import some TS stuff for Vue.
 import { defineComponent } from 'vue';
@@ -50,7 +51,7 @@ export default defineComponent(
     // Mutable component data.
     data (){
         return {
-            inputData: '',
+            inputData: 'Type something!',
             isValid: false.toString()
         }
     },
@@ -60,12 +61,20 @@ export default defineComponent(
     methods: {
         processInput(): void {
           let result: boolean = validateIMEI(this.inputData);
-          console.log(result);
           if (result){
             this.isValid = true.toString();
           }
+          else if (this.inputData == ''){
+            this.isValid = 'Empty input!';
+          }
+          else if (this.inputData.length != 15){
+            this.isValid = 'IMEI length invalid!';
+          }
+          else if (!isNumberSequence(this.inputData)){
+            this.isValid = 'Illegal characters found!';
+          }
           else {
-            // Do nothing.
+            this.isValid = false.toString();
           }
         }
     }
