@@ -45,8 +45,8 @@ because I love it.
 <style lang="scss">
 // Loading our remote fonts.
 @font-face{
-  font-family: 'Vogue';
-  src: url('https://angeldollface.art/assets/fonts/Vogue.ttf') format('truetype');
+  font-family: 'Drip';
+  src: url('https://angeldollface.art/assets/fonts/Drip.ttf') format('truetype');
 }
 @font-face{
   font-family: 'PSB';
@@ -54,7 +54,7 @@ because I love it.
 }
 
 // Setting our layout variables.
-$headingFont: 'Vogue';
+$headingFont: 'Drip';
 $contentFont: 'PSB';
 $mainColor: #000;
 $stdPadding: 20px;
