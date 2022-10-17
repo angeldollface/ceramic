@@ -51,8 +51,8 @@ export default defineComponent(
     // Mutable component data.
     data (){
         return {
-            inputData: 'Type something!',
-            isValid: 'No input yet!'
+            inputData: '',
+            isValid: 'Type something!'
         }
     },
 
