@@ -26,6 +26,12 @@ To view a live deployed version of this project, click here: [VIEW](https://ange
 
 I've tested this using the IMEI number of my iPhone and some IMEIs I found online.
 
+## TECHNOLOGIES USED :computer:
+
+- [Vue.js 3](https://vuejs.org)
+- [Typescript](https://typescriptlang.org)
+- [Git](https://git-scm.org)
+
 ## LUHN ALGORITHM IMPLEMENTATION :gear:
 
 The implementation of the *Luhn Algorithm*, the algorithm that actually validates IMEI numbers against their check digit, can be found in the file `src/components/lib.ts`.
