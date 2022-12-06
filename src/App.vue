@@ -45,17 +45,17 @@ because I love it.
 <style lang="scss">
 // Loading our remote fonts.
 @font-face{
-  font-family: 'Drip';
-  src: url('https://angeldollface.art/assets/fonts/Drip.ttf') format('truetype');
+  font-family: 'MC';
+  src: url('https://angeldollface.art/assets/fonts/ttf//MC.ttf') format('truetype');
 }
 @font-face{
-  font-family: 'PSB';
-  src: url('https://angeldollface.art/assets/fonts/PSB.ttf') format('truetype');
+  font-family: 'Ostrich';
+  src: url('https://angeldollface.art/assets/fonts/ttf/Ostrich.ttf') format('truetype');
 }
 
 // Setting our layout variables.
-$headingFont: 'Drip';
-$contentFont: 'PSB';
+$headingFont: 'MC';
+$contentFont: 'Ostrich';
 $mainColor: #000;
 $stdPadding: 20px;
 $accentColor: #EA1573;

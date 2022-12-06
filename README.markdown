@@ -22,6 +22,8 @@ To view a live deployed version of this project, click here: [VIEW](https://ange
 - 5.) Click "VALIDATE"!
 - 6.) Receive the status of your IMEI number from the text below the "VALIDATE" button that says `IMEI valid: Type something!`.
 
+Note: You can use this fake IMEI for testing: `356728113476259`
+
 ## QUALITY ASSURANCE :white_check_mark:
 
 I've tested this using the IMEI number of my iPhone and some IMEIs I found online.
