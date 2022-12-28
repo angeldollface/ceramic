@@ -52,7 +52,7 @@ export default defineComponent(
     data (){
         return {
             inputData: '',
-            isValid: 'Type something!'
+            isValid: 'Enter an IMEI number!'
         }
     },
 
