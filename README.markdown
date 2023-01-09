@@ -12,7 +12,7 @@ Since I was trying to figure out the algorithm for validating IMEI numbers for a
 
 - Library implementation in ECMA Script: [VIEW](https://github.com/angeldollface/luhny)
 - Library implementation in Rust: [VIEW](https://github.com/angeldollface/luhny.rs)
-- Web app implementation in Yew.rs:[VIEW](https://github.com/angeldollface/ceramic.rs)
+- Web app implementation in Yew.rs: [VIEW](https://github.com/angeldollface/ceramic.rs)
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
