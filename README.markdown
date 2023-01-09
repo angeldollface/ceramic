@@ -6,8 +6,13 @@
 
 ## ABOUT :books:
 
-Since I was trying to figure out the algorithm for validating IMEI numbers for a uni course, I thought I'd write a small app that solves this interesting problem. This little app checks whether the IMEI number of any one of your devices is valid or not by computing the check digit and comparing this to the actual check digit. The "Luhn Algorithm" is used to
-do this.
+Since I was trying to figure out the algorithm for validating IMEI numbers for a uni course, I thought I'd write a small app that solves this interesting problem. This little app checks whether the IMEI number of any one of your devices is valid or not by computing the check digit and comparing this to the actual check digit. The "Luhn Algorithm" is used to do this. A link to the library it uses in the background can be found in the section below.
+
+## LINKS :earth_americas:
+
+- Library implementation in ECMA Script: [VIEW](https://github.com/angeldollface/luhny)
+- Library implementation in Rust: [VIEW](https://github.com/angeldollface/luhny.rs)
+- Web app implementation in Yew.rs:[VIEW](https://github.com/angeldollface/ceramic.rs)
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
@@ -20,7 +25,7 @@ To view a live deployed version of this project, click here: [VIEW](https://ange
 - 3.) Copy this IMEI number or write it down.
 - 4.) Put the number into the input field.
 - 5.) Click "VALIDATE"!
-- 6.) Receive the status of your IMEI number from the text below the "VALIDATE" button that says `IMEI valid: Type something!`.
+- 6.) Receive the status of your IMEI number from the text below the "VALIDATE" button that says `IMEI valid: Enter an IMEI number!`.
 
 Note: You can use this fake IMEI for testing: `356728113476259`
 
