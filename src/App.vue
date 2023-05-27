@@ -43,16 +43,6 @@ Styling our app. We use SASS
 because I love it.
 -->
 <style lang="scss">
-// Loading our remote fonts.
-@font-face{
-  font-family: 'MC';
-  src: url('https://angeldollface.art/assets/fonts/ttf//MC.ttf') format('truetype');
-}
-@font-face{
-  font-family: 'Ostrich';
-  src: url('https://angeldollface.art/assets/fonts/ttf/Ostrich.ttf') format('truetype');
-}
-
 // Setting our layout variables.
 $headingFont: 'MC';
 $contentFont: 'Ostrich';
