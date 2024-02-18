@@ -16,11 +16,11 @@ Since I was trying to figure out the algorithm for validating IMEI numbers for a
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
-To view a live deployed version of this project, click here: [VIEW](https://angeldollface.art/ceramic)
+To view a live deployed version of this project, click here: [VIEW](https://angeldollface.boo/ceramic)
 
 ## USAGE :hammer:
 
-- 1.) Visit [this link](https://angeldollface.art/ceramic).
+- 1.) Visit [this link](https://angeldollface.boo/ceramic).
 - 2.) Get the IMEI for your device from the instructions for your platform. (You might have to scroll a bit.)
 - 3.) Copy this IMEI number or write it down.
 - 4.) Put the number into the input field.
